@@ -9,7 +9,7 @@ Para correr o projeto localmente é necessário node.js
 npm install
 ```
 
-## Agora vamos servir o "web server" execute o seguinte comando no cmd nesta pasta
+## Agora vamos servir o "web server" executando o seguinte comando no cmd nesta pasta
 
 ```
 npm run serve
