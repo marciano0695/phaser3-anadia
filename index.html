@@ -118,7 +118,7 @@
 
 				// Create um group object with physics (Ex: collide, overlap, velocity)
 				cows = this.physics.add.group({
-					setScale: { x: 1.3, y: 1.3 },
+					setScale: { x: 1.5, y: 1.5 },
 				})
 
 				// Animation for the cows
@@ -141,7 +141,7 @@
 
 				//  Checks to see if the player collides with any of the cow
 				// if he does call the hitCow function
-				this.physics.add.collider(player, cows, hitCow, null, this)
+				this.physics.add.overlap(player, cows, hitCow, null, this)
 
 				// Add score
 				scoreText = this.add.text(5, 5, "Milk's: 0", {
@@ -204,7 +204,7 @@
 
 				milks.create(x, y, "milk").setScale(1.3)
 
-				var cow = cows.create(x, y, "cow").setScale(1.3)
+				var cow = cows.create(x, y, "cow").setScale(1.5)
 				cow.setBounce(1)
 				cow.setCollideWorldBounds(true)
 				cow.setVelocity(
